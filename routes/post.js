@@ -13,6 +13,13 @@ router.get(path, requireLogin, (req, res) => {
        .catch(err => console.log(err));
 });
 
+router.get(`${path}/:id`, requireLogin, (req, res) => {
+   Post.find({ postedBy: req.params.id })
+       .populate('postedBy', '_id name')
+       .then(post => res.json({ post }))
+       .catch(err => console.log(err));
+});
+
 router.post(path, requireLogin, (req, res) => {
    const { title, body } = req.body;
    if(!title || !body) {
