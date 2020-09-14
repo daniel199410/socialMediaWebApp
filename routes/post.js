@@ -6,6 +6,13 @@ const Post = mongoose.model('Post');
 
 const path = '/post';
 
+router.get(path, requireLogin, (req, res) => {
+   Post.find()
+       .populate('postedBy', '_id name')
+       .then(posts => res.json({ posts }))
+       .catch(err => console.log(err));
+});
+
 router.post(path, requireLogin, (req, res) => {
    const { title, body } = req.body;
    if(!title || !body) {
