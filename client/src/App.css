@@ -35,3 +35,12 @@
 .input-field .prefix.active {
     color: #2962ff !important;
 }
+
+.row-0 {
+    margin-bottom: 0;
+}
+
+.row-20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
