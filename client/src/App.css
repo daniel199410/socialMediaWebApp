@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+.brand-logo{
+    font-family: 'Grand Hotel', cursive;
+}
+
+.logo-heading {
+    font-family: 'Grand Hotel', cursive;
+}
+
+.input-field label {
+    color: #616161  !important;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #616161  !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=password]:focus {
+    border-bottom: 1px solid #2962ff !important;
+    box-shadow: 0 1px 0 0 #2962ff !important;
+}
+/* valid color */
+.input-field input[type=text].valid, .input-field input[type=password].valid {
+    border-bottom: 1px solid #2962ff !important;
+    box-shadow: 0 1px 0 0 #2962ff !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid, .input-field input[type=password].invalid {
+    border-bottom: 1px solid #2962ff !important;
+    box-shadow: 0 1px 0 0 #2962ff !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #2962ff !important;
+}

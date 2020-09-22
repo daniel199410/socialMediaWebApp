@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import M from 'materialize-css';
+
+M.AutoInit();
 
 ReactDOM.render(
   <React.StrictMode>

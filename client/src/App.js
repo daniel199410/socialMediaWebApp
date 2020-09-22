@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
 import 'materialize-css/dist/css/materialize.min.css';
 
+import './App.css';
+
 import Home from "./components/screens/Home";
 import NavBar from "./components/Navbar";
 import Profile from "./components/screens/Profile";
