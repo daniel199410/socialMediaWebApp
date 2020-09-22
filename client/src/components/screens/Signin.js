@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const SignIn = () => {
     return (
@@ -11,8 +12,8 @@ const SignIn = () => {
                     <div className="section">
                         <div className="row">
                             <div className="input-field col s12">
-                                <input id="first_name" type="text" className="validate"/>
-                                <label htmlFor="first_name">First Name</label>
+                                <input id="email" type="email" className="validate"/>
+                                <label htmlFor="email">Email</label>
                             </div>
                         </div>
                         <div className="row">
@@ -28,6 +29,9 @@ const SignIn = () => {
                         </div>
                     </div>
                 </form>
+                <div className="section center-align ">
+                    <Link to="/signup">Create a new account</Link>
+                </div>
             </div>
         </div>
     );
